@@ -1,4 +1,10 @@
 terraform {
+  cloud {
+    organization = "Sample-ORG7565"
+    workspaces {
+      name = "tfc-guide-example"
+    }
+  } 
   required_providers {
     aws = {
       source  = "hashicorp/aws"
